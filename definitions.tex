@@ -15,6 +15,27 @@ footskip=0.2in
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newenvironment{dedication}
+{
+  % \cleardoublepage 
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   %\begin{textit}
+   \begin{flushright}
+   %\raggedright
+}%
+{
+   \end{flushright}
+   %\end{textit}
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \let\footruleskip\undefined
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -127,7 +148,7 @@ footskip=0.2in
 
 %\begin{figure}[t]
 \begin{center}
-\includegraphics[width=\textwidth]{../../pics/#3}
+\includegraphics[width=\textwidth]{Cards/#3}
 \end{center}
 %\end{figure}
 \newpage
